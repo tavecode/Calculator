@@ -38,33 +38,42 @@ function operate(op, a, b) {
 window.onload = function(){
 
 
-// display
+
+// display, hold values for calculation
+
+let temp
+
+let display = document.querySelector('#display')
+
+display.textContent = temp
+
+
 
 // buttons
 
 const add = document.querySelector('#add');
 add.addEventListener('click', () => {
-  alert("Hello World");
+  operate(1, a, b)
 });
 
 const sub = document.querySelector('#sub');
 sub.addEventListener('click', () => {
-  alert("Hello World");
+  operate(2, a, b)
 });
 
 const mul = document.querySelector('#mul');
 mul.addEventListener('click', () => {
-  alert("Hello World");
+  operate(3, a, b)
 });
 
 const div = document.querySelector('#div');
 div.addEventListener('click', () => {
-  alert("Hello World");
+  operate(4, a, b)
 });
 
 const equals = document.querySelector('#equals');
 equals.addEventListener('click', () => {
-  alert("Hello World");
+  //evaluate
 });
 
 // numbers
@@ -100,3 +109,15 @@ nine.onclick = () => console.log(9);
 
 
 }
+
+// display pushes right to left
+// click number button => show on display and hold in a (allow for multiple digits) store in array??
+// operator button => show on display and add to function/variable
+// 2nd number button => show on display hold in b
+// equals button => return or evaluate answer, show on display
+// hold previous answer
+// ac/clear button => wipe display/show 0
+// c/backspace => remove last character entered
+
+// layout/alignment, style, hover/click effects
+
