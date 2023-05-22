@@ -1,8 +1,13 @@
-
+//number holders
+let op = undefined
+let a = 0
+let b = 0
+let aStore = []
+let bStore = []
 
 // operations
 
-function addition(a, b) {
+function addition(a, b) { // change all sums to a
    return sum = a + b;
 };
 
@@ -33,6 +38,8 @@ function operate(op, a, b) {
     if (op == 4) {
         return divide(a, b);
     };
+    a = undefined
+    b = undefined
 }
 
 window.onload = function(){
@@ -41,7 +48,7 @@ window.onload = function(){
 
 // display, hold values for calculation
 
-let temp
+let temp = 0
 
 let display = document.querySelector('#display')
 
@@ -53,33 +60,56 @@ display.textContent = temp
 
 const add = document.querySelector('#add');
 add.addEventListener('click', () => {
-  operate(1, a, b)
+  op = 1
+  console.log('+')
+  //display operator on screen
 });
 
 const sub = document.querySelector('#sub');
 sub.addEventListener('click', () => {
-  operate(2, a, b)
+  op = 2
+  console.log('-')
 });
 
 const mul = document.querySelector('#mul');
 mul.addEventListener('click', () => {
-  operate(3, a, b)
+  op = 3
+  console.log('x')
 });
 
 const div = document.querySelector('#div');
 div.addEventListener('click', () => {
-  operate(4, a, b)
+  op = 4
+  console.log('÷')
 });
 
 const equals = document.querySelector('#equals');
 equals.addEventListener('click', () => {
+  a = Number(aStore.join(""));
+  b = Number(bStore.join("")); // join arrays into numbers
+  aStore = []
+  bStore = []
+  
+  console.log('=')
+  operate(op, a, b)
+  op = undefined
+  // return and display a
   //evaluate
 });
 
 // numbers
 
 const one = document.querySelector('#one');
-one.onclick = () => console.log(1);
+one.addEventListener('click', () => {
+  if (op == undefined) {
+    aStore.push(1)
+  }
+  else {
+    bStore.push(1)
+  }
+
+  console.log(1)
+});
 
 const two = document.querySelector('#two');
 two.onclick = () => console.log(2);
@@ -108,16 +138,31 @@ nine.onclick = () => console.log(9);
 
 
 
+
+
 }
 
+//console then display
+
+
+
 // display pushes right to left
-// click number button => show on display and hold in a (allow for multiple digits) store in array??
-// operator button => show on display and add to function/variable
-// 2nd number button => show on display hold in b
-// equals button => return or evaluate answer, show on display
+// click number button => show on display and hold in aArray (allow for multiple digits)
+// operator button => show on display and add to function/variable  "op"
+// 2nd number button => show on display hold in bArray
+// equals button => convert arrays to a b, return or evaluate answer, show on display, reset variables/arrays a, b, op, undefined
 // hold previous answer
 // ac/clear button => wipe display/show 0
 // c/backspace => remove last character entered
 
 // layout/alignment, style, hover/click effects
+
+// add kb/numpad support
+
+
+
+
+
+// find a way to differentiate/select aArray and bArray
+// independennt display/array
 
