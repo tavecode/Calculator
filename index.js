@@ -8,19 +8,19 @@ let bStore = []
 // operations
 
 function addition(a, b) { // change all sums to a
-   return sum = a + b;
+   return result = a + b; // sum
 };
 
 function subtract(a, b) {
-    return difference = a - b;
+    return result = a - b; // difference
 };
 
 function multiply(a, b) {
-    return product = a * b;
+    return result = a * b; // product
 };
 
 function divide(a, b) {
-    return quotient = a / b;
+    return result = a / b; // quotient
 };
 
 // operate
@@ -112,28 +112,100 @@ one.addEventListener('click', () => {
 });
 
 const two = document.querySelector('#two');
-two.onclick = () => console.log(2);
+two.addEventListener('click', () => {
+  if (op == undefined) {
+    aStore.push(2)
+  }
+  else {
+    bStore.push(2)
+  }
+
+  console.log(2)
+});
 
 const three = document.querySelector('#three');
-three.onclick = () => console.log(3);
+three.addEventListener('click', () => {
+  if (op == undefined) {
+    aStore.push(3)
+  }
+  else {
+    bStore.push(3)
+  }
+
+  console.log(3)
+});
 
 const four = document.querySelector('#four');
-four.onclick = () => console.log(4);
+four.addEventListener('click', () => {
+  if (op == undefined) {
+    aStore.push(4)
+  }
+  else {
+    bStore.push(4)
+  }
+
+  console.log(4)
+});
 
 const five = document.querySelector('#five');
-five.onclick = () => console.log(5);
+five.addEventListener('click', () => {
+  if (op == undefined) {
+    aStore.push(5)
+  }
+  else {
+    bStore.push(5)
+  }
+
+  console.log(5)
+});
 
 const six = document.querySelector('#six');
-six.onclick = () => console.log(6);
+six.addEventListener('click', () => {
+  if (op == undefined) {
+    aStore.push(6)
+  }
+  else {
+    bStore.push(6)
+  }
+
+  console.log(6)
+});;
 
 const seven = document.querySelector('#seven');
-seven.onclick = () => console.log(7);
+seven.addEventListener('click', () => {
+  if (op == undefined) {
+    aStore.push(7)
+  }
+  else {
+    bStore.push(7)
+  }
+
+  console.log(7)
+});
 
 const eight = document.querySelector('#eight');
-eight.onclick = () => console.log(8);
+eight.addEventListener('click', () => {
+  if (op == undefined) {
+    aStore.push(8)
+  }
+  else {
+    bStore.push(8)
+  }
+
+  console.log(8)
+});
 
 const nine = document.querySelector('#nine');
-nine.onclick = () => console.log(9);
+nine.addEventListener('click', () => {
+  if (op == undefined) {
+    aStore.push(9)
+  }
+  else {
+    bStore.push(9)
+  }
+
+  console.log(9)
+});
 
 
 
