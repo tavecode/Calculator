@@ -2,6 +2,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    background-color: #d4dde1;
 }
 .body {
     display: flex;
@@ -30,6 +31,7 @@ html, body {
 }
 .bottom {
     display: flex;
+    margin-bottom: 8px;
 }
 .number {
     background-color: #d4dde1;

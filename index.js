@@ -249,6 +249,18 @@ nine.addEventListener('click', () => {
   console.log(9)
 });
 
+const point = document.querySelector('#point');
+point.addEventListener('click', () => {
+  if (op == undefined) {
+    aStore.push('.')
+  }
+  else {
+    bStore.push('.')
+  }
+  updateDisplay()
+  console.log('.')
+});
+
 const clear = document.querySelector('#clear');
 clear.addEventListener('click', () => {
   aStore = []
