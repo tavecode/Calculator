@@ -47,6 +47,8 @@ window.onload = function(){
 
 
 // display, hold values for calculation
+// running calc display
+// recent number display
 
 let temp = 0
 
@@ -98,11 +100,23 @@ equals.addEventListener('click', () => {
 });
 
 // numbers
+const zero = document.querySelector('#zero');
+zero.addEventListener('click', () => {
+  if (op == undefined) {
+    aStore.push(0)
+  }
+  else {
+    bStore.push(0)
+  }
+
+  console.log(0)
+});
 
 const one = document.querySelector('#one');
 one.addEventListener('click', () => {
   if (op == undefined) {
     aStore.push(1)
+    // add to string for display
   }
   else {
     bStore.push(1)
@@ -219,15 +233,19 @@ nine.addEventListener('click', () => {
 
 
 // display pushes right to left
+// running calc display
+// recent number display
 // click number button => show on display and hold in aArray (allow for multiple digits)
 // operator button => show on display and add to function/variable  "op"
 // 2nd number button => show on display hold in bArray
 // equals button => convert arrays to a b, return or evaluate answer, show on display, reset variables/arrays a, b, op, undefined
 // hold previous answer
+// running/ multiple calc function
 // ac/clear button => wipe display/show 0
 // c/backspace => remove last character entered
 
 // layout/alignment, style, hover/click effects
+// colour scheme
 
 // add kb/numpad support
 
