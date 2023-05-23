@@ -4,6 +4,8 @@ let a = 0
 let b = 0
 let aStore = []
 let bStore = []
+//let cArray = []
+//let dArray = []
 
 // operations
 
@@ -50,11 +52,31 @@ window.onload = function(){
 // running calc display
 // recent number display
 
-let temp = 0
+function updateDisplay() {
+  if (op == undefined) {
+    content = (aStore.join(""));
+    display.textContent = content
+  }
+  else {
+    content = (bStore.join(""));
+    display.textContent = content
+  }
+}
+
+
+
+
+
+
+
+
+//let temp = 0
+//content = (cArray.join(""));
+//content = (dArray.join(""));
 
 let display = document.querySelector('#display')
 
-display.textContent = temp
+//display.textContent = temp
 
 
 
@@ -64,6 +86,7 @@ const add = document.querySelector('#add');
 add.addEventListener('click', () => {
   op = 1
   console.log('+')
+  display.textContent = '+'
   //display operator on screen
 });
 
@@ -71,18 +94,21 @@ const sub = document.querySelector('#sub');
 sub.addEventListener('click', () => {
   op = 2
   console.log('-')
+  display.textContent = '-'
 });
 
 const mul = document.querySelector('#mul');
 mul.addEventListener('click', () => {
   op = 3
   console.log('x')
+  display.textContent = 'x'
 });
 
 const div = document.querySelector('#div');
 div.addEventListener('click', () => {
   op = 4
   console.log('÷')
+  display.textContent = '÷'
 });
 
 const equals = document.querySelector('#equals');
@@ -95,6 +121,8 @@ equals.addEventListener('click', () => {
   console.log('=')
   operate(op, a, b)
   op = undefined
+  console.log(result)
+  display.textContent = result;
   // return and display a
   //evaluate
 });
@@ -108,7 +136,7 @@ zero.addEventListener('click', () => {
   else {
     bStore.push(0)
   }
-
+  updateDisplay()
   console.log(0)
 });
 
@@ -121,7 +149,7 @@ one.addEventListener('click', () => {
   else {
     bStore.push(1)
   }
-
+  updateDisplay()
   console.log(1)
 });
 
@@ -133,7 +161,7 @@ two.addEventListener('click', () => {
   else {
     bStore.push(2)
   }
-
+  updateDisplay()
   console.log(2)
 });
 
@@ -145,7 +173,7 @@ three.addEventListener('click', () => {
   else {
     bStore.push(3)
   }
-
+  updateDisplay()
   console.log(3)
 });
 
@@ -157,7 +185,7 @@ four.addEventListener('click', () => {
   else {
     bStore.push(4)
   }
-
+  updateDisplay()
   console.log(4)
 });
 
@@ -169,7 +197,7 @@ five.addEventListener('click', () => {
   else {
     bStore.push(5)
   }
-
+  updateDisplay()
   console.log(5)
 });
 
@@ -181,7 +209,7 @@ six.addEventListener('click', () => {
   else {
     bStore.push(6)
   }
-
+  updateDisplay()
   console.log(6)
 });;
 
@@ -193,7 +221,7 @@ seven.addEventListener('click', () => {
   else {
     bStore.push(7)
   }
-
+  updateDisplay()
   console.log(7)
 });
 
@@ -205,7 +233,7 @@ eight.addEventListener('click', () => {
   else {
     bStore.push(8)
   }
-
+  updateDisplay()
   console.log(8)
 });
 
@@ -217,10 +245,18 @@ nine.addEventListener('click', () => {
   else {
     bStore.push(9)
   }
-
+  updateDisplay()
   console.log(9)
 });
 
+const clear = document.querySelector('#clear');
+clear.addEventListener('click', () => {
+  aStore = []
+  bStore = []
+  op = undefined
+  updateDisplay(0)
+
+});
 
 
 
@@ -243,6 +279,7 @@ nine.addEventListener('click', () => {
 // running/ multiple calc function
 // ac/clear button => wipe display/show 0
 // c/backspace => remove last character entered
+// add decimals and exp
 
 // layout/alignment, style, hover/click effects
 // colour scheme
@@ -255,4 +292,10 @@ nine.addEventListener('click', () => {
 
 // find a way to differentiate/select aArray and bArray
 // independennt display/array
+
+
+
+// display a until op
+// display op
+// display b
 

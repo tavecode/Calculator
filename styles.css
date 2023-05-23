@@ -1,1 +1,49 @@
 /* hover for buttons, click effect*/
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.body {
+    display: flex;
+}
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d3033;
+}
+.display {
+    flex: 1;
+}
+.top{
+    display: flex;
+}
+.numbersOne {
+    display: flex;
+}
+.numbersTwo {
+    display: flex;
+}
+.numbersThree {
+    display: flex;
+}
+.bottom {
+    display: flex;
+}
+.number {
+    background-color: #d4dde1;
+    flex: 1;
+}
+.sideButtons,
+#equals {
+    background-color: #335252;
+    color: #aa4b41;
+}
+#clear,
+#backspace {
+    background-color: #aa4b41;
+}
+.link {
+
+}
