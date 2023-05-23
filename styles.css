@@ -5,17 +5,22 @@ html, body {
     background-color: #d4dde1;
 }
 .body {
-    display: flex;
+}
+.container {
+    width: 400px;
 }
 .calculator {
-    display: flex;
+  /*  display: flex;*/
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #2d3033;
+    padding: 20px;
 }
-.display {
-    flex: 1;
+#display {
+   /*flex: 1;*/
+    background-color: #d4dde1;
+    min-height: 30px;
+    text-align: center; /*-------------------*/
 }
 .top{
     display: flex;
@@ -42,9 +47,21 @@ html, body {
     background-color: #335252;
     color: #aa4b41;
 }
+.sideButtons {
+    flex: 1;
+}
+#equals { /* change flex basis*/
+    flex: 2;
+}
 #clear,
 #backspace {
     background-color: #aa4b41;
+}
+#backspace {
+    flex: 1;
+}
+#clear {
+    flex: 2;
 }
 .link {
 
