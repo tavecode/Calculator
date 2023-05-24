@@ -1,4 +1,113 @@
-/* hover for buttons, click effect*/
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #d4dde1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator {
+    height: 600px;
+    width: 400px;
+    background-color: #2d3033;
+    border-radius: 8px;
+}
+#display {
+    background-color: aliceblue;
+    height: 100px;
+    margin: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.top,
+.numbersOne,
+.numbersTwo,
+.numbersThree,
+.bottom {
+    display: flex;
+}
+.number {
+    height: 88px;
+    width: 90px;
+    background-color: #d4dde1;
+    font-weight: 900;
+    font-size: large;
+}
+.sideButtons {
+    height: 88px;
+    width: 90px;
+}
+#clear {
+    width: 180px;
+}
+#backspace {
+    width: 90px;
+}
+#clear,
+#backspace {
+    background-color: #aa4b41;
+    font-weight: 900;
+    font-size: large;
+}
+#equals {
+    width: 180px;
+}
+.sideButtons,
+#equals {
+    background-color: #335252;
+    color: #aa4b41;
+    font-weight: 900;
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hover for buttons, click effect*/ /*
 html, body {
     height: 100%;
     margin: 0;
@@ -13,12 +122,12 @@ body {
     display: flex;
     justify-content: center;
   /*  display: flex;
-    justify-content: center;*/
+    justify-content: center;*/  /*
 }
 .calculator {
-  /*  display: flex;*/
+  /*  display: flex;*/ /*
     width: 400px;
-    margin: 50px 0px 50px 0px;
+    margin: 70px 0px 70px 0px;
     flex-direction: column;
     align-items: center;
     background-color: #2d3033;
@@ -27,11 +136,14 @@ body {
     border-radius: 15px;
 }
 #display {
-   /*flex: 1;*/
+   /*flex: 1;*/ /*
     background-color: #d4dde1;
     min-height: 30px;
-    text-align: center; /*-------------------*/
+    text-align: center; /*-------------------*/ /*
     border: 2px solid grey;
+    display: flex; /* test*/ /*
+    justify-content: center;
+    align-items: center;
 }
 .top{
     display: flex;
@@ -63,7 +175,7 @@ body {
 .sideButtons {
     flex: 1;
 }
-#equals { /* change flex basis*/
+#equals { /* change flex basis*/ /*
     flex: 2;
 }
 #clear,
@@ -79,3 +191,15 @@ body {
 .link {
 
 }
+
+
+
+/* arrange display and allow for multiple numbers, resize buttons, allow for consecutive/running calculations,
+ add hover effects/ button style/border, add link/background,
+ redo code */
+
+
+/* display numbers separate from arrays, replace with result after =, 
+    find a way to make a = result and skip to bArray,
+    string calcs.
+*/
