@@ -46,6 +46,8 @@ html, body {
 }
 .number:hover {
     background-color: white;
+}
+.number:active {
     font-size: 25px;
 }
 .sideButtons {
@@ -69,6 +71,9 @@ html, body {
 #clear:hover,
 #backspace:hover {
     background-color: #a73225;
+} 
+#clear:active,
+#backspace:active {
     font-size: 25px;
 } 
 #equals {
@@ -85,8 +90,11 @@ html, body {
 }
 .sideButtons:hover,
 #equals:hover {
-    font-size: 40px;
     background-color: #247474
+} 
+.sideButtons:active,
+#equals:active {
+    font-size: 40px;
 } 
 
 
