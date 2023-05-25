@@ -92,9 +92,19 @@ add.addEventListener('click', () => {
 
 const sub = document.querySelector('#sub');
 sub.addEventListener('click', () => {
+  if (aStore.length >= 1 && op == undefined) {
   op = 2
   console.log('-')
   display.textContent = '-'
+  }
+  else if (op == undefined) {
+    aStore.push('-')
+    updateDisplay()
+  }
+  else if (bStore.length < 1){
+    bStore.push('-')
+    updateDisplay()
+  }
 });
 
 const mul = document.querySelector('#mul');
@@ -123,6 +133,7 @@ equals.addEventListener('click', () => {
   op = undefined
   console.log(result)
   display.textContent = result;
+  //aStore.push(...result)
   // return and display a
   //evaluate
 });
