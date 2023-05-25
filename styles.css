@@ -40,7 +40,13 @@ html, body {
     width: 90px;
     background-color: #d4dde1;
     font-weight: 900;
-    font-size: large;
+    font-size: 20px;
+    border: 2px solid #2d3033;
+  /*  transition: 0.2s;*/
+}
+.number:hover {
+    background-color: white;
+    font-size: 25px;
 }
 .sideButtons {
     height: 88px;
@@ -56,8 +62,15 @@ html, body {
 #backspace {
     background-color: #aa4b41;
     font-weight: 900;
-    font-size: large;
+    font-size: 20px;
+    border: 2px solid #2d3033;
+   /* transition: 0.2s;*/
 }
+#clear:hover,
+#backspace:hover {
+    background-color: #a73225;
+    font-size: 25px;
+} 
 #equals {
     width: 180px;
 }
@@ -66,8 +79,15 @@ html, body {
     background-color: #335252;
     color: #aa4b41;
     font-weight: 900;
-    font-size: large;
+    font-size: 30px;
+    border: 2px solid #2d3033;
+   /* transition: 0.2s;*/
 }
+.sideButtons:hover,
+#equals:hover {
+    font-size: 40px;
+    background-color: #247474
+} 
 
 
 
@@ -194,8 +214,16 @@ body {
 
 
 
-/* arrange display and allow for multiple numbers, resize buttons, allow for consecutive/running calculations,
- add hover effects/ button style/border, add link/background,
+/* arrange display and allow for multiple numbers, resize buttons,
+don't let them type more than one decimal,
+add negative numbers +/-,
+add modulo,
+ allow for consecutive/running calculations, separate display zones for running,
+ add different hover/toggle effects/ button style/border, add link/background,
+ try grid
+ change font
+ add sounds
+ shadows
  redo code */
 
 
