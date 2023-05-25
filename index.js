@@ -270,6 +270,21 @@ clear.addEventListener('click', () => {
 
 });
 
+const backspace = document.querySelector('#backspace');
+backspace.addEventListener('click', () => {
+  if (op == undefined) {
+    aStore.pop()
+  }
+  else if (bStore == []) {
+    op = undefined
+  }
+  else {
+    bStore.pop()
+  }
+  updateDisplay(0)
+
+});
+
 
 
 

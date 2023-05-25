@@ -222,12 +222,12 @@ body {
 
 
 
-/* arrange display and allow for multiple numbers, resize buttons,
+/* arrange display and allow for multiple numbers, resize buttons, backspace,
 don't let them type more than one decimal,
-add negative numbers +/-,
+add negative numbers/allow subtract to do both +/-,
 add modulo,
  allow for consecutive/running calculations, separate display zones for running,
- add different hover/toggle effects/ button style/border, add link/background,
+ add different hover/toggle effects/ button style/border, add link/background, ********
  try grid
  change font
  add sounds
